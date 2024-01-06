@@ -1,8 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
+import SkillsView from '../views/SkillsView.vue';
 import ProjectsView from '../views/ProjectsView.vue';
 import ContactView from '../views/ContactView.vue';
+import TodoView from '../views/TodoView.vue';
+import NotesView from '../views/NotesView.vue';
+
+
 
 const routes = [
   {
@@ -16,6 +21,11 @@ const routes = [
     component: AboutView
   },
   {
+    path: '/skills',
+    name: 'skills',
+    component: SkillsView
+  },
+  {
     path: '/projects',
     name: 'projects',
     component: ProjectsView
@@ -24,6 +34,16 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: TodoView
+  },
+  {
+    path: '/notesview',
+    name: 'notesview',
+    component: NotesView
   },
 ]
 

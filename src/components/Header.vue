@@ -4,9 +4,9 @@ import { ref } from 'vue';
 const isOpenMenu = ref(false);
 
 // Social Links - Update this links to your link
-const FacebookLink = 'https://www.facebook.com/itsarielbatoon';
-const LinkedinLink = 'https://www.linkedin.com/in/ariel-batoon-679688286/';
-const GithubLink = 'https://github.com/arielbatoon09';
+const FacebookLink = 'https://www.facebook.com/jakeson.babatuan.1';
+const LinkedinLink = '';
+const GithubLink = 'https://github.com/jakesonrey';
 
 const toggleMobileMenu = () => {
     return isOpenMenu.value = !isOpenMenu.value;
@@ -19,27 +19,31 @@ const toggleMobileMenu = () => {
         <nav class="mx-auto max-w-screen-xl px-12 py-4">
             <div class="flex flex-row items-center justify-between">
                 <router-link to="/" class="flex flex-col">
-                    <h1 class="font-bold text-xl">Your Name</h1>
-                    <p class="font-light text-lg text-gray-600">BSIT Student</p>
+                    <h1 class="font-light text-lg text-gray-600">My Personal</h1>
+                    <p class="font-bold text-xl">PORTFOLIO</p>
                 </router-link>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:block">
                     <ul class="flex flex-row gap-8">
                         <li
-                            :class="$route.name === 'home' ? 'text-cyan-700 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                            :class="$route.name === 'home' ? 'text-cyan-400 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                             <router-link to="/">Home</router-link>
                         </li>
                         <li
-                            :class="$route.name === 'about' ? 'text-cyan-700 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                            :class="$route.name === 'about' ? 'text-cyan-400 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                             <router-link to="/about">About</router-link>
                         </li>
                         <li
-                            :class="$route.name === 'projects' ? 'text-cyan-700 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                            :class="$route.name === 'skills' ? 'text-cyan-400 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                            <router-link to="/skills">Skills</router-link>
+                        </li>
+                        <li
+                            :class="$route.name === 'projects' ? 'text-cyan-400 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                             <router-link to="/projects">Projects</router-link>
                         </li>
                         <li
-                            :class="$route.name === 'contact' ? 'text-cyan-700 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                            :class="$route.name === 'contact' ? 'text-cyan-400 font-medium text-lg' : 'text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                             <router-link to="/contact">Contact</router-link>
                         </li>
                     </ul>
@@ -98,6 +102,11 @@ const toggleMobileMenu = () => {
                         :class="$route.name === 'about' ? 'bg-gray-50 p-2 rounded text-cyan-700 font-medium text-lg' : 'hover:bg-gray-50 p-2 text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                         About
                     </router-link>
+                                        <router-link to="/skills"
+                        :class="$route.name === 'skills' ? 'bg-gray-50 p-2 rounded text-cyan-700 font-medium text-lg' : 'hover:bg-gray-50 p-2 text-gray-700 hover:text-cyan-700 font-normal text-lg'">
+                    Skills
+                    </router-link>
+
                     <router-link to="/projects"
                         :class="$route.name === 'projects' ? 'bg-gray-50 p-2 rounded text-cyan-700 font-medium text-lg' : 'hover:bg-gray-50 p-2 text-gray-700 hover:text-cyan-700 font-normal text-lg'">
                         Projects
