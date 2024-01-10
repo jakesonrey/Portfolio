@@ -32,8 +32,8 @@
            
             
         </div>
-        <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-1/3">
-            <img src="../assets/profile.jpg"
+        <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-1/4">
+            <img src="../assets/Gwapo.jpg"
                 loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
         </div>
     </section>
