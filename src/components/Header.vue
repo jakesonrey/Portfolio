@@ -20,7 +20,7 @@ const toggleMobileMenu = () => {
             <div class="flex flex-row items-center justify-between">
                 <router-link to="/" class="flex flex-col">
                     <h1 class="font-light text-lg text-gray-600">My Personal</h1>
-                    <p class="font-bold text-xl">PORTFOLIO</p>
+                    <p class="font-bold text-cyan-400">PORTFOLIO</p>
                 </router-link>
 
                 <!-- Desktop Menu -->
