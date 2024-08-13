@@ -5,7 +5,7 @@ const isOpenMenu = ref(false);
 
 // Social Links - Update this links to your link
 const FacebookLink = 'https://www.facebook.com/jakeson.babatuan.1';
-const LinkedinLink = '';
+const LinkedinLink = 'https://www.linkedin.com/in/jakeson-babatuan-ba4653313/';
 const GithubLink = 'https://github.com/jakesonrey';
 
 const toggleMobileMenu = () => {
